@@ -1,0 +1,19 @@
+.navbar_Menu {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    /* width: 300px; */
+}
+
+
+.isActive {
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.isPending {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+}

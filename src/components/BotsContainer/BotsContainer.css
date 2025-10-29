@@ -1,0 +1,45 @@
+.bot_header {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5EBEA;
+    /* margin-bottom: 32px; */
+}
+
+.bot_button {
+    width: 140px;
+    height: 48px;
+    padding: 12px 12px 12px 14px;
+    border-radius: 8px;
+    background: var(--Secondary-500, #458484);
+    color: var(--Primary-White, #F6FCFB);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.bot_title {
+    color: var(--Primary-Black, #0A0E15);
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.bot_created {
+    background: var(--Primary-White, #F6FCFB);
+    border-radius: 32px;
+    border: 1px solid var(--Extra-Stroke, #D6DBDA);
+    text-align: left;
+    padding: 32px;
+    color: var(--Primary-Black, #0A0E15);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}

@@ -1,0 +1,11 @@
+.createbot_mainpic {
+    width: 440px;
+    height: 440px;
+    background: var(--Secondary-200, #BFDBD7);
+}
+
+.createbot_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
