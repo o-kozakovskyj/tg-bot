@@ -1,38 +1,36 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Push = ({ pushData }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
-    const navigate = useNavigate();
+  const handleNavigate = () => {
+    const currentLocale = location.pathname.split("/")[1];
+    navigate(`/${currentLocale}/editPush/${pushData.id}`);
+  };
 
-    const handleNavigate = (pushData) => {
-        navigate(`/editPush/${pushData.id}`);
-    };
-
-    return <div>
-        <img src="./" alt="bot_logo" />
-        <h4>
-            {pushData.pushName}
-            <button>{pushData.time}</button>
-            <button>{pushData.day}</button>
-            <button>{pushData.status}</button>
-        </h4>
-        <h5>
-            <span>{pushData.description}</span>
-            <span>Updated: {pushData.updatedDate}</span>
-        </h5>
+  return (
+    <div>
+      {/* <img src="./" alt="bot_logo" /> */}
+      <h4>
+        {pushData.pushName}
+        <button>{pushData.time}</button>
+        <button>{pushData.day}</button>
+        <button>{pushData.status}</button>
+      </h4>
+      <h5>
+        <span>{pushData.description}</span>
+        <span>Updated: {pushData.updatedDate}</span>
+      </h5>
+      <div>
         <div>
-            <div>
-                <button>Delete</button>
-                <button onClick={() => handleNavigate(pushData)}>
-                    Edit
-                </button>
-            </div>
+          <button>Delete</button>
+          <button onClick={handleNavigate}>Edit</button>
         </div>
-        <h5>
-            {pushData.createdDate}
-        </h5>
-
+      </div>
+      <h5>{pushData.createdDate}</h5>
     </div>
-}
+  );
+};
 
 export default Push;

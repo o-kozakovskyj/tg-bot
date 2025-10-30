@@ -10,7 +10,7 @@ const EditPushContainer = () => {
 
     return <div>
         <div>
-            <img src="" alt="push_mainImage"/>
+            {/* <img src="" alt="push_mainImage"/> */}
         </div>
         <div>
             <button>Select type</button>

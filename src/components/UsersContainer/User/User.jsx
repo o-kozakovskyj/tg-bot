@@ -1,7 +1,7 @@
 const User = ({ usersData }) => {
     return <div>
         <div>
-            <img src="" alt="" />
+            {/* <img src="" alt="" /> */}
             <h3>{usersData.userName}</h3>
             <button>{usersData.role}</button>
         </div>
