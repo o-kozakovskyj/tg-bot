@@ -14,7 +14,7 @@ const EditBotContainer = () => {
             <h2>Edit Bot</h2>
         </div>
         <div>
-            <img src="" alt="" className='createbot_logo' />
+            {/* <img src="" alt="" className='createbot_logo' /> */}
             <h3>Type name</h3>
         </div>
         <div className='createbot_main'>
